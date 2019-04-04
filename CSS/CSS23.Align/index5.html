@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        .clearfix{
+            overflow: auto;
+        }
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #target1, #target2{
+            color: whitesmoke;
+            padding: 30px;
+            width: 350px;
+        }
+
+        #target1{
+            background-color: #1e7e34;
+            float: left;
+        }
+
+        #target2{
+            background-color: #493eff;
+            float: right;
+        }
+        .clr{
+            clear: both;
+        }
+        #parent{
+            margin-top: 30px;
+            background-color: #ac2925;
+            color: whitesmoke;
+            padding: 30px 0 30px 0;
+            width: 1000px;
+        }
+
+        #parent #child1{
+            float: left;
+            background-color: #6610f2;
+            color: whitesmoke;
+            padding: 20px;
+        }
+
+        #parent #child2{
+            float: right;
+            background-color: #c69500;
+            color: whitesmoke;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="target1">
+        Thẻ nằm trực tiếp trong body
+    </div>
+
+    <div id="target2">
+        Thẻ nằm trực tiếp trong body
+    </div>
+
+    <div class="clr"></div>
+
+    <div id="parent" class="clearfix">
+        <div id="child1">Thẻ div nằm trong thẻ div</div>
+        <div id="child2">Thẻ div nằm trong thẻ div</div>
+    </div>
+
+</body>
+</html>

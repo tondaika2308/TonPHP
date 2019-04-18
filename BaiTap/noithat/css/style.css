@@ -1,3 +1,4 @@
+
 .clearfix {
     overflow: auto;
 }
@@ -95,6 +96,27 @@
     z-index: 2;
     margin-top: 280px;
     margin-left: 500px;
+}
+
+.right{
+    float: right;
+}
+
+.right h4{
+    color: #F66C27;
+    font-size: 22px;
+    display: inline-table;
+}
+
+.right input[type="submit"]{
+    background: #f48146;
+    color: #FFFFFF;
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border-radius: 32px;
+    font-size: 18px;
+    border: none;
 }
 
 /*

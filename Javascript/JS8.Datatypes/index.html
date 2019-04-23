@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        //Kiểu dữ liệu chuỗi
+        var name = "Nguyễn Chí Tôn";
+        //Kiểu số
+        var age = 18;
+        //Kiểu đối tượng
+        var obj = {}; //Khai báo đối tượng
+        //Vừa khai báo đối tượng, vừa khai báo thuộc tính đối tượng
+        var student1 = {name:"Nguyễn Chí Tôn", age: 18};
+        /**
+         * Khai báo đối tượng và khai báo các thuộc tính
+         * đối tượng trên các dòng khác nhau
+         */
+        var student2 = {};
+        student2.name = "CToon";
+        student2.age = 18;
+
+        //Kiểu boolean trả về giá trị true hoặc false
+        var gender1 = true;
+        var gender2 = false;
+
+        //Kiểu dữ liệu dạng mảng
+        var list_name = ["Nguyen Van A", "Nguyen Van B", "Nguyen Van C"];
+        var list_age = [21, 22, 23];
+        var list_student = [student1, student2];
+        //Mảng thì bao gồm nhiều phần tử có đánh số thứ tự mà thuật ngữ gọi là key
+        //Key trong mảng của js và php thì bắt đầu từ 0
+        //Mỗi phần tử trong mảng được tách bởi dấu phẩy và có 1 key duy nhất
+
+        //Truy cập vào phần tử của mảng
+        console.log('list_name[2]: ' + list_name[2]);
+        console.log('list_age[0]: ' + list_age[0]);
+        console.log('list_student[1]: ' + list_student[1].name);
+        console.log('list_student[1]: ' + list_student[1].age);
+
+        //Kiểu undefined
+        var a; //Undefined xuất hiện khi mà chúng ta không gán giá trị cho biến
+        //Undefined nghĩa là không xác định
+
+        //Lệnh typeof
+        //Trả về kiểu dữ liệu của biến
+        console.log('typeof a: ' + typeof a);
+        console.log('typeof name: ' + typeof name);
+        console.log('typeof age: ' + typeof age);
+        console.log('typeof gender1: ' + typeof gender1);
+        console.log('typeof gender2: ' + typeof gender2);
+        console.log('typeof student2: ' + typeof student2);
+        console.log('typeof list_name: ' + typeof list_name)
+        console.log('typeof list_student: ' + typeof list_student);
+
+        //Dạng rỗng
+        var name3 = "";
+        //Dạng null (không có gì cả) khác với undifined (không được khai báo)
+        var data = null;
+        console.log('typeof data(object): ' + typeof data);
+
+    </script>
+
+</body>
+</html>

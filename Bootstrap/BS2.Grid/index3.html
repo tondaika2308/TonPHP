@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+        .row {
+            border: 1px solid orange;
+            margin-top: 20px;
+        }
+        [class*="col"] {
+            text-align: center;
+            background: green;
+            color: white;
+            border-left: 1px solid red;
+            border-right: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>CSS Responsive Grid Class</h1>
+        <ol>
+            <li>col-* áp dụng cho màn hình mobile (từ 0 đến 575px)
+            vd: col-1, col-2, col-3, col-4, ..., col-12</li>
+            <li>col-sm-* áp dụng cho tablet (từ 576-676px)
+            vd: col-sm-1, col-sm-2, col-sm-3, ..., col-sm-12</li>
+            <li>col-md-* áp dụng cho laptop (từ 768-991px)
+            vd: col-md-1, col-md-2, col-md-3, ..., col-md-12</li>
+            <li>col-lg-* áp dụng cho màn hình pc (từ 992-1199px)
+            vd: col-ld-1, col-ld-2, col-ld-3, ..., col-ld-12</li>
+            <li>col-xl-* áp dụng cho màn hình siêu lớn (từ 1200px trở lên)
+            vd: col-xl-1, col-xl-2, col-xl-3, ..., col-xl-12</li>
+        </ol>
+
+        <div class="row">
+
+            <div class="col-6 col-sm-4 col-md-6 col-lg-12">
+                <h1>Cột 1</h1>
+                <p>
+                    For example, here are two grid layouts that apply to every device and viewport, from xs to xl. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
+                </p>
+            </div>
+
+            <div class="col-6 col-sm-8 col-md-6 col-lg-12">
+                <h1>Cột 2</h1>
+                <p>
+                    For example, here are two grid layouts that apply to every device and viewport, from xs to xl. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 col-sm-4 col-md-6 col-lg-12">
+                <h1>Cột 1</h1>
+                <p>
+                    For example, here are two grid layouts that apply to every device and viewport, from xs to xl. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-12">
+                <h1>Cột 2</h1>
+                <p>
+                    For example, here are two grid layouts that apply to every device and viewport, from xs to xl. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

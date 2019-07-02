@@ -77,4 +77,16 @@
         }
         return true;
     }
+    
+        document.getElementById("full_name").onfocus = function() {myFunction()};
+    function myFunction() {
+        document.getElementById("full_name").style.borderColor = "red";
+    }
+
+
+
+    document.getElementById("full_name").onkeydown = function() {myFunction2()};
+    function myFunction2() {
+        document.getElementById("full_name").style.backgroundColor = "red";
+    }
 </script>

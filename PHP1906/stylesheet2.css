@@ -1,0 +1,161 @@
+.header,.nav,.banner,.main,.footer,.path-site, .testabc{
+    width: 960px;
+    margin: 0 auto;
+}
+.header img{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.nav{
+    background:url("./images/bg/nav.jpg") repeat-x;
+    height: 32px ;
+}
+.nav ul
+{
+    padding: 0;
+    margin: 0;
+}
+.nav ul.sub-menu{
+    display: block;
+}
+.nav ul.sub-menu
+{
+    position: absolute;
+    width: 200px;
+    background: brown;
+    top: 28px;
+    display: none;
+}
+
+.nav ul.sub-menu li{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.nav ul.sub-menu li:hover{
+    background: cadetblue;
+}
+.nav ul.ul-level-1
+{
+    position: relative;
+    padding: 4px;
+}
+
+.nav ul.ul-level-1 li.level-1:hover{
+    background-color: cadetblue;
+}
+.nav ul.ul-level-1 li.level-1:hover ul.sub-menu{
+    display: block;
+}
+.nav ul li{
+    float: left;
+    list-style: none;
+}
+.nav ul li a{
+    padding: 2px 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper-main-content{
+    margin-right: 10px;
+}
+.wrapper-main-content .icon-content{
+    width: 15px;
+    margin: 0 5px;
+}
+.wrapper-content a.link-title-content{
+    text-decoration: none;
+}
+.main h3{
+    margin: 0px;
+    line-height: 30px;
+    color: #fff;
+    background:url("./images/bg/nav.jpg") repeat-x;
+}
+
+.main ul{
+    padding: 0;
+    margin: 0;
+}
+.main ul li{
+    list-style: none;
+}
+.main ul li a{
+    text-decoration: none;
+    color: black;
+}
+.main-content,.blog-right{
+    float: left;
+}
+.main-content{
+    width: 70%;
+}
+.main-content .last-new-item,.main-content .list-last-new
+{
+    float: left;
+}
+.main-content .last-new-item
+{
+    width: 60%;
+}
+.wrapper-main-content .blog-thanh-nien-tinh-nguyen .wrapper-content,.wrapper-main-content .blog-hoat-dong-doan .wrapper-content,.wrapper-main-content .blog-vi-cuoc-song .wrapper-content{
+    display: table;
+}
+.main-content .last-new-item .content
+{
+    text-align: justify;
+    padding-right: 10px;
+}
+.main-content .last-new-item .content img{
+    float: left;
+    margin-right: 5px;
+}
+.main-content .list-last-new{
+    width: 40%;
+}
+.blog-right{
+    width: 30%;
+}
+/*
+page hoi sinh vien
+ */
+.path-site
+{
+    padding: 20px;
+}
+.path-site .icon-home{
+    width: 19px;
+
+}
+.path-site .path-item{
+    margin: 10px;
+    line-height: 32px;
+}
+/*
+page dang ky
+ */
+
+.wrapper-main-content.form-dang-ky{
+}
+.wrapper-main-content.form-dang-ky .item-input{
+    margin-bottom: 10px;
+    display: flex;
+}
+.wrapper-main-content.form-dang-ky .input-label{
+    width: 200px;
+    display: block;
+    float: left;
+
+}
+.wrapper-main-content.form-dang-ky .input{
+    float: left;
+    padding: 5px 10px;
+}
+
+.error{
+    border: red 1px solid;
+}

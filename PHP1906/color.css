@@ -1,0 +1,9 @@
+.color{
+    border: red 1px solid;
+}
+
+
+.input{
+    margin-bottom: 10px;
+    display: flex;
+}

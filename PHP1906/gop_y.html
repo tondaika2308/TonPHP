@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="color.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="comment">
+            <form method="post" action="gop_y.php" onsubmit=" return check_data">
+                <div class="item-input">
+                    <label name="subject">Subject</label><input id="subject" class="input" type="text" onkeyup="check_data(this)">
+                </div>
+                <div class="item-input">
+                    <label name="content">Content</label><textarea id="content" class="input" type="text" onkeyup="check_data(this)"></textarea>
+                </div>
+                <input type="submit" class="submit-form" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    function check_data(self) {
+        var my_Data=self.value;
+        if (my_Data==""){
+            self.classList.add("color");
+        } else {
+            self.classList.remove("color");
+        }
+    }
+
+    function check() {
+        var subject="",content="";
+        subject=document.getElementById('subject').value;
+        content=document.getElementById('content').value;
+
+        if (subject==""){
+            alert("Vui lòng nhập tiêu đề");
+            document.getElementById('subject').focus();
+            return false;
+        } else if (content==""){
+            alert("Vui lòng nhập nội dung");
+            document.getElementById('content').focus();
+            return false;
+        }
+        return true;
+    }
+</script>

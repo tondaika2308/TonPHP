@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="stylesheet2.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="main-content">
     <div class="wrapper-main-content form-dang-ky">
         <form method="post" action="dangky.php">
-            <div class="item-input"><label class="input-label">Họ và tên</label><input class="input" type="text" id="full_name" name="full_name" onkeyup="check_empty(this)"></div>
-            <div class="item-input"><label class="input-label">Giới tính</label>Nam<input type="radio" checked name="gioi_tinh" value="Nam">Nữ<input type="radio" name="gioi_tinh" value="Nữ"></div>
-            <div class="item-input"><label class="input-label">Ngày sinh</label><input class="input" type="text" id="ngay_sinh" name="ngay_sinh" onkeyup="check_empty(this)"></div>
-            <div class="item-input"><label class="input-label">Email</label><input class="input" type="text" id="email" name="email" onkeyup="check_empty(this)"></div>
-            <div class="item-input"><label class="input-label">Địa chỉ</label><textarea class="input" id="dia_chi" name="dia_chi" onkeyup="check_empty(this)"></textarea></div>
+            <div class="item-input"><label class="input-label">Họ và tên</label><input class="input" type="text" id="full_name" name="full_name"></div>
+            <div class="item-input"><label class="input-label">Ngày sinh</label><input class="input" type="text" id="ngay_sinh" name="ngay_sinh"></div>
+            <div class="item-input"><label class="input-label">Email</label><input class="input" type="text" id="email" name="email"></div>
+            <div class="item-input"><label class="input-label">Địa chỉ</label><textarea class="input" id="dia_chi" name="dia_chi"></textarea></div>
             <button class="submit-form" onclick="check()" type="button">Gửi đăng  ký</button>
         </form>
 
@@ -59,43 +58,23 @@
         dia_chi=document.getElementById('dia_chi').value;
         if (full_name==""){
             alert("Vui lòng nhập họ và tên");
-            document.getElementById('full_name').focus();
             return false;
         }else if (ngay_sinh==""){
             alert("Vui lòng nhập ngày sinh");
-            document.getElementById('ngay_sinh').focus();
             return false;
         } else if (email==""){
             alert("Vui lòng nhập email");
-            document.getElementById('email').focus();
             return false;
         } else if (dia_chi==""){
             alert("Vui lòng nhập địa chỉ");
-            document.getElementById('dia_chi').focus();
+            return false;
+        } else if (!isValidDate(ngay_sinh)){
+            alert("Vui lòng kiểm tra lại ngày sinh");
+            return false;
+        } else if (!validateEmail(email)){
+            alert("Vui lòng kiểm tra lại email");
             return false;
         }
         return true;
     }
-
-   /* document.getElementById("full_name").onfocus = function() {myFunction()};
-    function myFunction() {
-        document.getElementById("full_name").style.borderColor = "red";
-    }
-    document.getElementById("full_name").onkeydown = function() {myFunction2()};
-    function myFunction2() {
-        document.getElementById("full_name").style.backgroundColor = "red";
-    }
-    */
-
-   function check_empty(self) {
-       var my_value=self.value;
-       if (my_value==""){
-           self.classList.add("error");
-       } else{
-           self.classList.remove("error");
-       }
-
-   }
-
-
 </script>
